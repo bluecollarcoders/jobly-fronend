@@ -17,4 +17,4 @@ const UserProvider =
      );
 
 
-export { UserProvider }
+export { UserProvider };
