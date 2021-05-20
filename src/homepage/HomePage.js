@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./Hompage.css";
+import "./Homepage.css";
 import UserContext from "../auth/UserContext";
 
 /** Homepage of site.
