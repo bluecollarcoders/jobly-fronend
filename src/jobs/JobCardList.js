@@ -11,24 +11,23 @@ import JobCard from "./JobCard";
  *
  */
 
-function JobCardList({ jobs, apply}) {
-    console.debug("JobCardList", "jobs=", jobs);
+function JobCardList({ jobs, apply }) {
+  console.debug("JobCardList", "jobs=", jobs);
 
-    return (
-        <div className="JobCardList">
+  return (
+      <div className="JobCardList">
         {jobs.map(job => (
-            <JobCard 
-            key={jobs.id}
-            id={jobs.id}
-            title={jobs.title}
-            salary={jobs.salary}
-            equity={jobs.equity}
-            companyName={jobs.companyName}
+            <JobCard
+                key={job.id}
+                id={job.id}
+                title={job.title}
+                salary={job.salary}
+                equity={job.equity}
+                companyName={job.companyName}
             />
         ))}
-        </div>
-
-    );
+      </div>
+  );
 }
 
 export default JobCardList;
