@@ -75,6 +75,18 @@ function SignupForm({ signup }) {
                    value={formData.firstName}
                    onChange={handleChange}
                 />
+                
+                <div className="form-group">
+                <label>Last name</label>
+                <input
+                   name="lastName"
+                   className="form-control"
+                   value={formData.lastName}
+                   onChange={handleChange}
+                />
+                </div>
+
+
                 </div>
                 <div className="form-group">
                 <label>Email</label>
